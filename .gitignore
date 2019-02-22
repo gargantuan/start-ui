@@ -1,2 +1,20 @@
-/node_modules
+# Don't check auto-generated stuff into git
+coverage
+reports
+node_modules
+!typings
+typings/*
+!typings/tslint.json
+!/typings/fixed/
+!/typings/untyped/
+stats.json
+/dist
+
+# Cruft
+.DS_Store
+npm-debug.log
+/reports
+storybook-static
 /yarn-error.log
+/.vscode/settings.json
+/dist
