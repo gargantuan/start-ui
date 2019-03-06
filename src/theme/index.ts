@@ -13,7 +13,7 @@ export const namedColors = {
     bgColor: '#fff',
     fontColor: '#494949',
     positiveColor: '#00B391',
-    neutralColor: '#50A2FF',
+    neutralColor: '#0063e1',
     warningColor: '#D49A00',
     negativeColor: '#D40000',
     quietColor: '#EEEEEE',

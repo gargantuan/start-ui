@@ -13,6 +13,8 @@ const Button = styled.button`
   color: ${(props: IButtonProps) => props.theme.neutralColorInverted};
   border-radius: ${(props: IButtonProps) => props.theme.standardRadius};
   padding: ${(props: IButtonProps) => props.theme.baseUnit}px ${(props: IButtonProps) => props.theme.baseUnit * 2}px;
+  font-weight: bold;
+  font-size: 16px;
 
   &:hover {
     background-color: ${(props: IButtonProps) => props.theme.neutralColorDarker};
