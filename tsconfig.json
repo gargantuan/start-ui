@@ -23,6 +23,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "internals/setupEnzyme.js"],
   "exclude": ["node_modules", "build", "scripts"]
 }

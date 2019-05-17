@@ -1,0 +1,41 @@
+{{#if isStyledComponent}}
+/// <reference path="../../../StartUi.d.ts" />
+{{/if}}
+/**
+ *
+ * {{ properCase name }}
+ *
+ */
+
+import * as React from 'react';
+{{#if isStyledComponent}}
+import styled from 'styled-components';
+interface I{{properCase name}}Props extends React.HTMLProps<HTMLDivElement> {
+  theme: StartUi.Theme;
+};
+{{else}}
+interface I{{properCase name}}Props extends React.HTMLProps<HTMLDivElement> {};
+{{/if}}
+
+
+export const {{ properCase name }}: React.SFC = (props: I{{properCase name}}Props) => {
+  return (
+    {{#if isStyledComponent}}
+    const { theme, ...otherProps } = props;
+    <div {...otherProps}>
+    {{else}}
+    <div>
+    {{/if}}
+      {{properCase name}} Component
+    </div>
+  );
+}
+
+
+{{#if isStyledComponent}}
+export default styled({{ properCase name }})`
+  border: black 1px solid;
+`;
+{{else}}
+export default {{ properCase name }};
+{{/if}}
